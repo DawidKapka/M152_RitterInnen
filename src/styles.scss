@@ -1,4 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import 'src/styles/colors.scss';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0; font: 400 14px/20px, "Inter", sans-serif !important;
+  background: $white;
+}
+
+h1 {
+  font-size: 48px !important;
+}
+
+h2 {
+  font-size: 32px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+h4 {
+  font-size: 16px !important;
+}
+
+h5 {
+  font-size: 14px !important;
+}
+
+p {
+  font-size: 12px !important;
+}
