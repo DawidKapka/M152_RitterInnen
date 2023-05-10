@@ -9,13 +9,17 @@ import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import { AnimationsComponent } from './animations/animations.component';
 import { ImagesComponent } from './images/images.component';
+import { GridVerticalComponent } from './components/grid-vertical/grid-vertical.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         AnimationsComponent,
-        ImagesComponent
+        ImagesComponent,
+        GridVerticalComponent,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
