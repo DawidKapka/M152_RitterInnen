@@ -1,0 +1,46 @@
+@import 'src/styles/colors.scss';
+
+.header {
+  width: 100vw;
+  height: 128px;
+  background: $accent-1;
+  display: flex;
+
+  .back {
+    width: 128px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-icon {
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      font-size: 48px;
+      color: $white;
+
+      &:hover {
+        cursor: pointer;
+        color: $gray;
+      }
+    }
+  }
+
+  .heading {
+    width: calc(100% - 128px);
+    height: 100%;
+
+    .title {
+      color: $white;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 0;
+      height: 128px;
+      line-height: 128px;
+      left: 0;
+      pointer-events: none;
+    }
+  }
+}
