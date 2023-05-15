@@ -1,3 +1,103 @@
-<app-header>Animations</app-header>
+<app-header>Animationen</app-header>
 <app-grid-vertical>
+  <div row-1 class="css-animations">
+    <h2 class="title">CSS-Animationen</h2>
+    <p class="desc">Mithilfe von <span class="keyframes">@keyframes</span> können Animationen im CSS erstellt werden.</p>
+    <div class="example">
+      <div class="explanation">
+        <p>
+          <span class="class">{{ ".subject {" }} </span><br>
+          <span class="code-key">animation: </span><span class="code-value">pulse 2000ms infinite;</span><br>
+          <span class="class">{{ "}" }} </span><br>
+          <br>
+          <span class="class">{{ "@keyframe pulse {" }} </span><br>
+          <span class="code-key">{{ "0% {"}} </span><br>
+          <span class="code-key"><span class="code-key">transform: </span><span class="code-value">scale(1);</span></span><br>
+          <span class="code-key">{{ "}"}} </span><br>
+          <span class="code-key">{{ "25% {"}} </span><br>
+          <span class="code-key"><span class="code-key">transform: </span><span class="code-value">scale(2);</span></span><br>
+          <span class="code-key"><span class="code-key">background: </span><span class="code-value">#FC9038;</span></span><br>
+
+          <span class="code-key">{{ "}"}} </span><br>
+          <span class="code-key">{{ "100% {"}} </span><br>
+          <span class="code-key"><span class="code-key">transform: </span><span class="code-value">scale(1);</span></span><br>
+          <span class="code-key">{{ "}"}} </span><br>
+
+
+          <span class="class">{{ "}" }} </span><br>
+        </p>
+
+      </div>
+      <div class="animation animation-css">
+        <div class="subject"></div>
+      </div>
+    </div>
+  </div>
+  <div row-2>
+    <h2 class="title">Animated GIF</h2>
+    <p class="desc">Eine Animation kann auch als <span class="keyframes">GIF</span> direkt ins HTML eingebunden werden.</p>
+    <div class="example">
+      <div class="explanation">
+        <span class="class"><span><</span>img class="gif" src="travis-scott.gif" alt="GIF"></span>
+      </div>
+      <div class="animation">
+        <img class="gif" src="assets/gif/travis-scott.gif" alt="Travis Scott GIF">
+      </div>
+    </div>
+  </div>
+  <div row-3>
+    <h2 class="title">SVG-Animationen</h2>
+    <p class="desc">Es können Animationen mithilfe von <span class="keyframes">SVG</span> erstellt werden. Auf die Elemente eines SVGs kann direkt vom CSS zugegriffen werden, wie auf alle andere HTML-Tags.</p>
+    <div class="example">
+      <div class="explanation">
+        <span class="class"><span><</span>svg class="svg"><span><</span>/svg></span>
+        <br>
+        <br>
+        <span class="class">{{ ".svg {" }} </span><br>
+        <span class="code-key">animation: </span><span class="code-value">blink 2000ms infinite;</span><br>
+        <span class="class">{{ "}" }} </span><br>
+        <br>
+        <span class="class">{{ "@keyframe blink {" }} </span><br>
+        <span class="code-key">{{ "0% {"}} </span><br>
+        <span class="code-key"><span class="code-key">opacity: </span><span class="code-value">0;</span></span><br>
+        <span class="code-key">{{ "}"}} </span><br>
+        <span class="code-key">{{ "25% {"}} </span><br>
+        <span class="code-key"><span class="code-key">opacity: </span><span class="code-value">1;</span></span><br>
+        <span class="code-key">{{ "}"}} </span><br>
+        <span class="code-key">{{ "100% {"}} </span><br>
+        <span class="code-key"><span class="code-key">opacity: </span><span class="code-value">0;</span></span><br>
+        <span class="code-key">{{ "}"}} </span><br>
+
+
+        <span class="class">{{ "}" }} </span><br>
+      </div>
+    </div>
+    <div class="animation animation-svg">
+      <svg data-name="terminal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 117.5" class="icon">
+        <path d="M29.42,44.15V46.9L17.26,54.48l-1.44-2,11.3-7-11.3-6.94,1.31-2Z" class="icon__face"/>
+        <path d="M30.92,52h16v2.37h-16Z" class="icon__face"/>
+        <rect x="2" y="2" width="134" height="113.5" rx="10" ry="10" style="" class="icon__stroke icon__stroke--outer"/>
+        <line x1="1.79" y1="25.17" x2="136.21" y2="25.17" style="" class="icon__stroke icon__stroke--inner"/>
+      </svg>
+    </div>
+  </div>
 </app-grid-vertical>
+<div class="scroll-animation">
+  <h2 class="title">Scroll-Animationen</h2>
+  <p class="desc">Scroll-Animationen sind Animationen, welche durch das <span class="keyframes">Scrollen</span> ausgelöst werden.
+    Mithilfe von Javascript können Scroll-Events im Fenster abgefangen werden. Danach kann je nach Zustand vom Scrollen der Animation einen bestimmten Zustand geben.
+    <br>
+    <br>
+    <span class="keyframes">Beispiel:</span> <br>
+    <strong>Webseite nicht gescrollt:</strong> Animation zu 0% sichtbar. <br>
+    <strong>Webseite zur Hälfte gescrollt:</strong> Animation zu 50% sichtbar. <br>
+    <strong>Webseite ganz nach unten gescrollt:</strong> Animation zu 100% sichtbar.
+  </p>
+  <div class="example-scroll">
+    <div class="sc-animation" (scroll)="handleScroll($event)">
+      <div class="animated-div">
+        <h1 class="animated-h1">Fancy Scroll Animation</h1>
+      </div>
+    </div>
+  </div>
+</div>

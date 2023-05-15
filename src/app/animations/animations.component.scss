@@ -1,0 +1,188 @@
+@import 'src/styles/colors.scss';
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.desc {
+  padding: 0 32px;
+  text-align: center;
+
+  .keyframes {
+    color: $secondary;
+    font-weight: bold;
+  }
+}
+
+.example {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  .explanation {
+    width: calc(100% - 64px);
+  }
+
+  .explanation {
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid $accent-1;
+    border-radius: 6px;
+    color: $primary;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    max-height: 100%;
+    overflow-y: scroll;
+    min-height: 64px;
+
+    .class {
+      color: $accent-1;
+      font-weight: bold;
+    }
+    .code-key {
+      margin-left: 12px;
+      font-weight: bold;
+    }
+    .code-value {
+      font-weight: initial;
+    }
+  }
+
+  .animation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+  }
+
+  .animation-css {
+    height: 64px;
+  }
+
+  .subject {
+    margin-top: 32px;
+    height: 32px;
+    width: 32px;
+    background: $secondary;
+    border-radius: 32px;
+    animation: pulse 2000ms infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(2);
+      background: $accent-2;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.gif {
+  height: 25em;
+  width: 25em;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+}
+
+svg {
+  width: 1000px;
+  border: blue dashed 1px;
+}
+
+.icon {
+  width: 100px;
+  border: none;
+}
+
+.icon__stroke {
+  fill-opacity: 0;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+
+.icon__stroke--inner {
+  stroke-width: 2px;
+}
+.icon__face{
+  fill: $primary;
+  fill-opacity: 0;
+  animation-name: blink;
+  animation-duration: 1s;
+  // animation-timing-function: ease-out;
+  animation-delay: 3s;
+  // animation-delay: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.icon__stroke--outer {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  // animation-delay: 3s;
+}
+.icon__stroke--inner {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes blink {
+  0%{
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+.animation-svg {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.scroll-animation {
+  padding: 64px;
+}
+
+.sc-animation {
+  height: 1024px;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 64px;
+}
+
+.animated-div {
+  height: 100%;
+  background: $secondary;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.animated-h1 {
+  height: 100%;
+  vertical-align: center;
+  color: $white;
+  opacity: 1;
+  align-items: center;
+  text-align: center;
+}
