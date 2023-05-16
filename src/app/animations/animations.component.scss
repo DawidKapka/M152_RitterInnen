@@ -159,7 +159,7 @@ svg {
   justify-content: center;
 }
 
-.scroll-animation {
+.scroll-animation, .html-canvas {
   padding: 64px;
 }
 
@@ -172,7 +172,7 @@ svg {
 
 .animated-div {
   height: 100%;
-  background: $secondary;
+  background: $accent-1;
   border-radius: 32px;
   display: flex;
   justify-content: center;
@@ -180,9 +180,15 @@ svg {
 
 .animated-h1 {
   height: 100%;
+  margin-top: 64px;
   vertical-align: center;
   color: $white;
   opacity: 1;
   align-items: center;
   text-align: center;
+}
+
+#canvasEl {
+  width: calc(100% - 128px);
+  height: 40vh;
 }

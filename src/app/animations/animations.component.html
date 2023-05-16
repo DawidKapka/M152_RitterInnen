@@ -82,10 +82,24 @@
     </div>
   </div>
 </app-grid-vertical>
+<div class="html-canvas">
+  <h2 class="title">HTML-Canvas-Animationen</h2>
+  <p class="desc">
+    Mit der <span class="keyframes">Canvas-API</span> können Animationen auf einem Canvas-Element erstellt werden. Dabei wird immer wieder eine Funktion ausgeführt,
+    <br>welche das Canvas-Element aus dem DOM holt und das Bild bei jedem Frame mit neuen Parametern neuzeichnet.
+    <br>Da die Funktion immer wieder wiederholt wird, sieht es aus, als ob das Canvas animiert wäre.
+
+  </p>
+  <div class="example">
+    <canvas id="canvasEl">
+      Sorry, your browser does not support canvas :(
+    </canvas>
+  </div>
+</div>
 <div class="scroll-animation">
   <h2 class="title">Scroll-Animationen</h2>
   <p class="desc">Scroll-Animationen sind Animationen, welche durch das <span class="keyframes">Scrollen</span> ausgelöst werden.
-    Mithilfe von Javascript können Scroll-Events im Fenster abgefangen werden. Danach kann je nach Zustand vom Scrollen der Animation einen bestimmten Zustand geben.
+    Mithilfe von Javascript können Scroll-Events im Fenster abgefangen werden. Danach kann man je nach Zustand vom Scrollen der Animation einen bestimmten Zustand geben.
     <br>
     <br>
     <span class="keyframes">Beispiel:</span> <br>
@@ -94,7 +108,7 @@
     <strong>Webseite ganz nach unten gescrollt:</strong> Animation zu 100% sichtbar.
   </p>
   <div class="example-scroll">
-    <div class="sc-animation" (scroll)="handleScroll($event)">
+    <div class="sc-animation" (scroll)="handleScroll()">
       <div class="animated-div">
         <h1 class="animated-h1">Fancy Scroll Animation</h1>
       </div>
