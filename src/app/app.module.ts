@@ -12,10 +12,12 @@ import { ImagesComponent } from './images/images.component';
 import { GridVerticalComponent } from './components/grid-vertical/grid-vertical.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GridHorizontalComponent } from './components/grid-horizontal/grid-horizontal.component';
+import { SoundsComponent } from './components/sounds/sounds.component';
 import { MockupsComponent } from './mockups/mockups.component';
 import {PdfViewerModule} from "ng2-pdf-viewer";
 import { ImpressumComponent } from './impressum/impressum.component';
 import { VideosComponent } from './videos/videos.component';
+import { StyleguideComponent } from './components/styleguide/styleguide.component';
 
 @NgModule({
     declarations: [
@@ -26,9 +28,11 @@ import { VideosComponent } from './videos/videos.component';
         GridVerticalComponent,
         HeaderComponent,
         GridHorizontalComponent,
+        SoundsComponent,
         MockupsComponent,
         ImpressumComponent,
-        VideosComponent
+        VideosComponent,
+        StyleguideComponent
     ],
     imports: [
         BrowserModule,
