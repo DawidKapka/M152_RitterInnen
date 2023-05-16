@@ -117,8 +117,16 @@
   }
 }
 
+.icons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .icons {
   display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
 
   .icon {
     height: 96px;

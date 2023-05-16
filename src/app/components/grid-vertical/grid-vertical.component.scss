@@ -10,7 +10,6 @@
   .grid-row {
     box-shadow: 2px 2px 2px $gray;
     width: 30%;
-    height: 100%;
     background-color: $white;
     border: 1px solid $accent-1;
     color: $primary;
@@ -26,5 +25,12 @@
       width: 100%;
       margin: 32px 0;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    margin: 64px 32px !important;
+    width: calc(100vw - 64px) !important;
   }
 }

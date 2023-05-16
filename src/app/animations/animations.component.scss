@@ -1,5 +1,10 @@
 @import 'src/styles/colors.scss';
 
+app-grid-vertical {
+  height: auto !important;
+  display: block;
+}
+
 .title {
   width: 100%;
   text-align: center;
