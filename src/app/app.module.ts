@@ -12,6 +12,10 @@ import { ImagesComponent } from './images/images.component';
 import { GridVerticalComponent } from './components/grid-vertical/grid-vertical.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GridHorizontalComponent } from './components/grid-horizontal/grid-horizontal.component';
+import { MockupsComponent } from './mockups/mockups.component';
+import {PdfViewerModule} from "ng2-pdf-viewer";
+import { ImpressumComponent } from './impressum/impressum.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
     declarations: [
@@ -21,14 +25,18 @@ import { GridHorizontalComponent } from './components/grid-horizontal/grid-horiz
         ImagesComponent,
         GridVerticalComponent,
         HeaderComponent,
-        GridHorizontalComponent
+        GridHorizontalComponent,
+        MockupsComponent,
+        ImpressumComponent,
+        VideosComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatCardModule,
-        MatIconModule
+        MatIconModule,
+        PdfViewerModule
     ],
     providers: [],
     bootstrap: [AppComponent]
