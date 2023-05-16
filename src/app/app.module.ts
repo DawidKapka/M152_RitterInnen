@@ -11,6 +11,7 @@ import { AnimationsComponent } from './animations/animations.component';
 import { ImagesComponent } from './images/images.component';
 import { GridVerticalComponent } from './components/grid-vertical/grid-vertical.component';
 import { HeaderComponent } from './components/header/header.component';
+import { GridHorizontalComponent } from './components/grid-horizontal/grid-horizontal.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './components/header/header.component';
         AnimationsComponent,
         ImagesComponent,
         GridVerticalComponent,
-        HeaderComponent
+        HeaderComponent,
+        GridHorizontalComponent
     ],
     imports: [
         BrowserModule,

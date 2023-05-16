@@ -1,0 +1,31 @@
+@import 'src/styles/colors.scss';
+
+.grid {
+  width: calc(100% - 256px);
+  height: calc(100vw - 256px);
+  margin: 64px 128px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .grid-column {
+    box-shadow: 2px 2px 2px $gray;
+    height: 30%;
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $accent-1;
+    color: $primary;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .grid {
+    flex-direction: column;
+    height: 100%;
+
+    .grid-column {
+      width: 100%;
+      margin: 32px 0;
+    }
+  }
+}
