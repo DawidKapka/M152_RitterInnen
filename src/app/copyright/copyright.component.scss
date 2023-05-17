@@ -1,0 +1,17 @@
+@import 'src/styles/colors.scss';
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.desc {
+  text-align: center;
+  padding: 10% 32px;
+
+  .keyframes {
+    color: $secondary;
+    font-weight: bold;
+  }
+}
