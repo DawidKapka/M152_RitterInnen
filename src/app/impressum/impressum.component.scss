@@ -24,6 +24,10 @@ h2 {
 ul {
   display: inline-block;
   text-align: center;
+
+  li {
+    list-style-type: none;
+  }
 }
 .quellen-liste {
   text-align: center;
