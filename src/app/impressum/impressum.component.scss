@@ -1,7 +1,30 @@
-h1, p {
-  margin: 15px 10px;
+@import 'src/styles/colors.scss';
+
+h2, p{
+  text-align: center;
+  width: 90%;
+  padding: 0 5%;
+}
+h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.item {
+  margin-bottom: 50px;
+}
+.box-horizontal {
+  border: 1px solid $primary;
+  width: 80%;
+  display: block;
+  margin: 50px auto;
+  padding-bottom: 30px;
+}
+
+ul {
+  display: inline-block;
   text-align: center;
 }
-.item {
-  height: 20vh;
+.quellen-liste {
+  text-align: center;
 }

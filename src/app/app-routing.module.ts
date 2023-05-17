@@ -8,6 +8,7 @@ import {MockupsComponent} from "./mockups/mockups.component";
 import {ImpressumComponent} from "./impressum/impressum.component";
 import {VideosComponent} from "./videos/videos.component";
 import {StyleguideComponent} from "./components/styleguide/styleguide.component";
+import {CopyrightComponent} from './copyright/copyright.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'videos', component: VideosComponent },
   { path: 'sounds', component: SoundsComponent },
   { path: 'styleguide', component: StyleguideComponent },
+  { path: 'copyright', component: CopyrightComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to
 ];
 
