@@ -18,6 +18,7 @@ import {PdfViewerModule} from "ng2-pdf-viewer";
 import { ImpressumComponent } from './impressum/impressum.component';
 import { VideosComponent } from './videos/videos.component';
 import { StyleguideComponent } from './components/styleguide/styleguide.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
     declarations: [
@@ -32,7 +33,8 @@ import { StyleguideComponent } from './components/styleguide/styleguide.componen
         MockupsComponent,
         ImpressumComponent,
         VideosComponent,
-        StyleguideComponent
+        StyleguideComponent,
+        CopyrightComponent
     ],
     imports: [
         BrowserModule,
