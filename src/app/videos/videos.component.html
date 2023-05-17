@@ -1,18 +1,52 @@
 <app-header>Videos</app-header>
-<app-grid-horizontal>
-    <div column-1>
-        <h1>MOV</h1>
-        <video width="800" controls>
-            <source src="assets/videos/movVideo.mov" type="video/mp4" />
+<app-grid-vertical>
+    <div row-1>
+        <h2>OGV</h2>
+        <video controls autoplay>
+            <source src="assets/videos/videoOgv.ogv" type="video/mp4"/>
         </video>
+        <p>
+            Das OGV-Videoformat (Ogg Video) ist ein offenes und lizenzfreies Videoformat, das von der Xiph.Org
+            Foundation entwickelt wurde. Es ist ein Container-Format, das den Theora-Video-Codec und den
+            Vorbis-Audio-Codec verwendet und ist hauptsächlich für die Wiedergabe von Videos im Web optimiert.
+        </p>
     </div>
-    <div column-2>
-        <h1>WEBM</h1>
-        <video width="800" controls>
-            <source src="assets/videos/webmVideo.webm" type="video/mp4" />
+    <div row-2>
+        <h2>WEBM</h2>
+        <video controls autoplay>
+            <source src="assets/videos/videoWebm.webm" type="video/mp4"/>
         </video>
+        <p>
+            MP4 (MPEG-4) ist ein beliebtes Videoformat für Online-Streaming und wird von vielen Geräten und
+            Plattformen unterstützt. Es ist auch ein Container-Format, das verschiedene Video- und Audio-Codecs
+            unterstützt. MP4 bietet eine gute Balance zwischen Größe und Qualität, da es eine bessere Komprimierung als
+            AVI aufweist und dennoch eine gute Bild- und Audioqualität liefert.
+        </p>
     </div>
-    <div column-3>
-
+    <div row-3>
+        <h2>MP4</h2>
+        <video controls autoplay>
+            <source src="assets/videos/videoMp4.mp4" type="video/mp4"/>
+        </video>
+        <p>
+            WebM ist ein relativ neues Videoformat, das von Google entwickelt wurde und speziell für die Wiedergabe von
+            Videos im Web optimiert ist. Es ist ein offenes und lizenzfreies Format und bietet eine gute Qualität bei
+            geringen Dateigrößen. WebM verwendet den VP8- oder VP9-Video-Codec und dean Vorbis- oder
+            Opus-Audio-Codec.
+        </p>
     </div>
-</app-grid-horizontal>
+</app-grid-vertical>
+<div class="box-horizontal">
+    <h2>Unterschied OGV / WEBM / MP4 </h2>
+    <p>
+        Im Vergleich zu MP4 und WebM bietet OGV eine ähnliche Qualität bei ähnlichen Dateigrößen. Es hat jedoch eine
+        geringere Verbreitung und Unterstützung als die beiden anderen Formate. OGV ist jedoch eine gute Wahl für
+        Nutzer, die auf offene und lizenzfreie Formate Wert legen.
+    </p>
+    <p>
+        Insgesamt sind MP4 und WebM beliebte Formate für Online-Streaming und bieten eine gute Balance zwischen Größe
+        und Qualität. WebM ist speziell für die Wiedergabe von Videos im Web optimiert und bietet eine gute Qualität bei
+        geringen Dateigrößen. OGV ist eine gute Wahl für Nutzer, die offene und lizenzfreie Formate bevorzugen, hat aber
+        eine geringere Verbreitung und Unterstützung als die anderen Formate.
+    </p>
+</div>
